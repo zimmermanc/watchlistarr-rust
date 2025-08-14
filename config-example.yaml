@@ -1,0 +1,34 @@
+## Watchlistarr Rust Configuration Example
+## Copy this file to config.yaml and update with your actual values
+
+interval:
+  seconds: 15
+
+sonarr:
+  baseUrl: "https://your-sonarr-url.com"
+  apikey: "your-sonarr-api-key-here"
+  qualityProfile: "Any"
+  bypassIgnored: false
+  seasonMonitoring: "all"
+  tags:
+    - watchlistarr
+
+radarr:
+  baseUrl: "https://your-radarr-url.com"
+  apikey: "your-radarr-api-key-here"
+  qualityProfile: "Any"
+  bypassIgnored: false
+  tags:
+    - watchlistarr
+
+plex:
+  token: "your-plex-token-here"
+  skipfriendsync: false
+
+delete:
+  movie: false
+  endedShow: false
+  continuingShow: false
+  interval:
+    days: 7
+  deleteFiles: true
